@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tambah Mahasiswa</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Tambah Mahasiswa Baru</h1>
+    <form action="/tambah" method="POST" enctype="multipart/form-data">
+      <input type="text" name="nama_lengkap" placeholder="Nama Lengkap" required>
+      <input type="text" name="nim" placeholder="NIM" required>
+      <input type="text" name="fakultas" placeholder="Fakultas" required>
+      <input type="text" name="jurusan" placeholder="Jurusan" required>
+      <input type="text" name="prodi" placeholder="Program Studi" required>
+      <input type="number" name="tahun_masuk" placeholder="Tahun Masuk" required>
+      <input type="file" name="foto" accept="image/*">
+      <button type="submit">💾 Simpan</button>
+    </form>
+    <a href="/list" class="back-btn">⬅ Kembali</a>
+  </div>
+</body>
+</html>
